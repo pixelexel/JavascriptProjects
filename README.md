@@ -1,0 +1,15 @@
+# My JavaScript projects:
+
+1. [DrumKit](https://pixelexel.github.io/JavascriptProjects/Drum%20Kit/index.html)
+
+2. [JSCLock](https://pixelexel.github.io/JavascriptProjects/Clock/index.html)
+
+3. [CSSVariables](https://pixelexel.github.io/JavascriptProjects/CSS%20Variables/CSSVariables.html)
+
+4. [Gallery](https://pixelexel.github.io/JavascriptProjects/Gallery/index.html)
+
+5. [Type Ahead](https://pixelexel.github.io/JavascriptProjects/Type%20Ahead/index.html)
+
+6. [HTML5 Canvas](https://pixelexel.github.io/JavascriptProjects/HTML5%20Canvas/index.html)
+
+
