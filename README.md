@@ -13,3 +13,6 @@
 6. [HTML5 Canvas](https://pixelexel.github.io/JavascriptProjects/HTML5%20Canvas/index.html)
 
 7. [Shift Selector](https://pixelexel.github.io/JavascriptProjects/Shift%20Selector/index.html)
+
+8. [Custom Video Player](https://pixelexel.github.io/JavascriptProjects/Custom%20Video%20Player/index.html)
+
