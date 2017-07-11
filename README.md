@@ -20,6 +20,6 @@
 
 10. [Slide in on Scroll](https://pixelexel.github.io/JavascriptProjects/Slide%20in%20on%20Scroll/index.html)
 
-11. [LocalStorage](https://pixelexel.github.io/JavascriptProjects/LocalStorage/index.html)
+11. [LocalStorage](https://pixelexel.github.io/JavascriptProjects/%20LocalStorage/index.html)
 
 
