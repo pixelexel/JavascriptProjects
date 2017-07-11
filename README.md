@@ -16,3 +16,10 @@
 
 8. [Custom Video Player](https://pixelexel.github.io/JavascriptProjects/Custom%20Video%20Player/index.html)
 
+9. [Key Sequence Detection](https://pixelexel.github.io/JavascriptProjects/Key%20Sequence%20Detection/index.html)
+
+10. [Slide in on Scroll](https://pixelexel.github.io/JavascriptProjects/Slide%20in%20on%20Scroll/index.html)
+
+11. [LocalStorage](https://pixelexel.github.io/JavascriptProjects/LocalStorage/index.html)
+
+
