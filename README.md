@@ -22,7 +22,7 @@
 
 11. [LocalStorage](https://pixelexel.github.io/JavascriptProjects/%20LocalStorage/index.html)
 
-12. [LocalStorage](https://pixelexel.github.io/JavascriptProjects/MouseMoveShadow/index.html)
+12. [Mouse Move Shadow](https://pixelexel.github.io/JavascriptProjects/MouseMoveShadow/index.html)
 
-13. [LocalStorage](https://pixelexel.github.io/JavascriptProjects/SortWithoutArticles/index.html)
+13. [Sort Without Articles](https://pixelexel.github.io/JavascriptProjects/SortWithoutArticles/index.html)
 
