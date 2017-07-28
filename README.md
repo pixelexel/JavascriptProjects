@@ -26,3 +26,7 @@
 
 13. [Sort Without Articles](https://pixelexel.github.io/JavascriptProjects/SortWithoutArticles/index.html)
 
+14. [Webcam Fun!](https://pixelexel.github.io/JavascriptProjects/WebcamFun/index.html)
+
+15. [Speech Dictation](https://pixelexel.github.io/JavascriptProjects/SpeechDictation/index.html)
+
