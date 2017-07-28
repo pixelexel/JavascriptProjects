@@ -28,5 +28,5 @@
 
 14. [Webcam Fun!](https://pixelexel.github.io/JavascriptProjects/WebcamFun/index.html)
 
-15. [Speech Dictation](https://pixelexel.github.io/JavascriptProjects/SpeechDictation/index.html)
+15. [Speech Detection](https://pixelexel.github.io/JavascriptProjects/SpeechDetection/index.html)
 
