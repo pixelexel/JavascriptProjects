@@ -30,3 +30,9 @@
 
 15. [Speech Detection](https://pixelexel.github.io/JavascriptProjects/SpeechDetection/index.html)
 
+16. [Geolocation](https://pixelexel.github.io/JavascriptProjects/Geolocation/index.html)
+
+17. [Follow Along Link Highlighter](https://pixelexel.github.io/JavascriptProjects/Follow%20Along%20Link%20Highlighter/index.html)
+
+18. [Speech Synthesis](https://pixelexel.github.io/JavascriptProjects/Speech%20Synthesis/index.html)
+
