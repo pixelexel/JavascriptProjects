@@ -1,4 +1,4 @@
-# Project Javascript:
+# My Javascript Projects:
 
 1. [DrumKit](https://pixelexel.github.io/JavascriptProjects/Drum%20Kit/index.html)
 
