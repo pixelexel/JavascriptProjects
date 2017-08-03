@@ -1,4 +1,4 @@
-# Project Javascript: A series of JS projects to strengthen my JS and Web Dev skills
+# Project Javascript:
 
 1. [DrumKit](https://pixelexel.github.io/JavascriptProjects/Drum%20Kit/index.html)
 
