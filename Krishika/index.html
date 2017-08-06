@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Krishika!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Hey Krishika!</h1>
+  </header>
+
+  <nav id="main">
+    <ul>
+      <li class="logo"><a href="#">Keep Reading!</a></li>
+      <li><a href="#">Scroll Down!</a></li>
+    </ul>
+  </nav>
+
+  <div class="site-wrap">
+    <p> So this is your card. See, it’s a Sunday and I don’t get much free time so I’m going to make this short but here it goes. </p>
+    <p>You’re amazing. We’ve had our fair bit of fights all these 20 years of my existence. You helped me out on my school projects after I begged you for days. We fought over watching TV so much. I can’t even remember the other things we used to fight over. But in the end we were always there for each other.</p>
+    <p>However, things changed once you met Jiju. We all realized that you weren't going to be around for much longer. We pretty much stopped fighting. I listened to everything you said. Partially because you would blackmail me about how you won’t be around here after you’re married and how this is the last time you’re asking for something before get married and partially because I realized how much I’m going to miss you, once you’re gone.</p>
+    <p>Anyways, we don’t see each other as often and you seem pretty distant most of the time. I won’t say I miss you all the time but there are certain days where I just remember the days when you were around and there were four of us together here and how that’s not going to be a thing anymore. </p>
+    <p>I really like it when you come over, so please keep doing that. Until next time!</p>
+    <p>P.S: How’s this website? I’ve written a lot of the code by myself here like those transitions you see when you scroll down.</p>
+
+
+  </div>
+<script>
+
+  const nav = document.querySelector('#main');
+  let topOfNav = nav.offsetTop;
+
+  function fixNav(){
+    if(window.scrollY >= topOfNav){
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0 + 'px';
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+
+  window.addEventListener('scroll', fixNav);
+
+</script>
+
+</body>
+</html>
