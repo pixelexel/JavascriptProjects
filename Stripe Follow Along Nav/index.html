@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Akshay</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav class="top">
+    <div class="dropdownBackground">
+      <span class="arrow"></span>
+    </div>
+    <h2>WIP</h2>
+    <ul class="cool">
+      <li>
+        <a href="#">About Me</a>
+        <div class="dropdown dropdown1">
+          <div class="bio">
+            <img src="">
+            <p>Hey, I'm Akshay!</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">Projects</a>
+        <ul class="dropdown projects">
+          <li>
+            <a href="https://github.com/pixelexel/Bloggr">Bloggr</a>
+          </li>
+          <li>
+            <a href="https://github.com/pixelexel/JavascriptProjects">JS30</a>
+          </li>
+          <li>
+            <a href="https://github.com/pixelexel/Sentimental_Tweets">Sentimental Tweets</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Other Links</a>
+        <ul class="dropdown dropdown3">
+          <li><a class="button" href="https://github.com/pixelexel">Github</a></li>
+          <li><a class="button" href="">Blog</a></li>
+          <li><a class="button" href="http://twitter.com/pixelexel">Twitter</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+<script>
+
+  const triggers = document.querySelectorAll('.cool > li');
+  const background = document.querySelector('.dropdownBackground');
+  const nav = document.querySelector('.top');
+
+  function handleEnter(){
+    this.classList.add('trigger-enter');
+    setTimeout(() => this.classList.contains('trigger-enter' ) && this.classList.add('trigger-enter-active'), 150); //Runs add class if contains is True
+    background.classList.add('open');
+
+    const dropdown = this.querySelector('.dropdown');
+    const dropdownCoords = dropdown.getBoundingClientRect();
+    const navCoords = nav.getBoundingClientRect();
+
+    const coords = {
+      height : dropdownCoords.height,
+      width : dropdownCoords.width,
+      top : dropdownCoords.top - navCoords.top, //To handle changes above nav
+      left : dropdownCoords.left - navCoords.left
+    };
+
+
+
+    background.style.setProperty('width', `${coords.width}px`);
+    background.style.setProperty('height', `${coords.height}px`);
+    background.style.setProperty('transform', `translate(${coords.left}px,${coords.top}px)`);
+  }
+
+  function handleLeave(){
+    this.classList.remove('trigger-enter', 'trigger-enter-active');
+    background.classList.remove('open');
+  }
+
+  triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
+  triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
+</script>
+
+</body>
+</html>

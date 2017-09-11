@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whack A Mole!</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Whack-a-mole! <span class="score">0</span></h1>
+  <div class = 'difficultybuttons'>
+    <button data-lowerlimit="300" data-upperlimit="3000" class="difficulty">Easy</button>
+    <button data-lowerlimit="200" data-upperlimit="2000" class="difficulty">Medium</button>
+    <button data-lowerlimit="100" data-upperlimit="1000" class="difficulty">Hard</button>
+  </div>
+  <div class="highscore">Highest Score: </div>
+  <div class="game">
+    <div class="hole hole1">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole2">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole3">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole4">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole5">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole6">
+      <div class="mole"></div>
+    </div>
+  </div>
+
+<script>
+  const holes = document.querySelectorAll('.hole');
+  const scoreBoard = document.querySelector('.score');
+  const moles = document.querySelectorAll('.mole');
+  const difficultyButtons = document.querySelector('.difficultybuttons');
+  const difficulty = document.querySelectorAll('.difficulty');
+  const highScoreHTML = document.querySelector('.highscore');
+
+  let lastHole;
+  let timeUp = false;
+  let score = 0;
+  let runningflag = false;
+  let highestScore = localStorage.getItem('highscore') || 0;
+
+  highScoreHTML.textContent = "Highest Score: " + highestScore;
+
+  function randomTime(min, max){
+    return Math.round(Math.random() * (max-min) + min);
+  }
+
+  function randomHole(holes){
+    var index = Math.floor(Math.random() * holes.length);
+    if(index == 6) index=5; //if index is 6, make it 5, holes from 0 to 5
+    const hole = holes[index];
+    if( hole === lastHole)
+    return randomHole(holes);
+
+    lastHole = hole;
+    return hole;
+  }
+
+  function peep(lowerlimit,upperlimit){
+    const time = randomTime(lowerlimit, upperlimit);
+    const hole = randomHole(holes);
+
+    hole.classList.add('up');
+    setTimeout(() => {
+      hole.classList.remove('up');
+      if(!timeUp) peep(lowerlimit,upperlimit);
+    }, time);
+
+  }
+
+  function startGame(){
+    scoreBoard.textContent = 0;
+    timeUp = false;
+    score = 0;
+    difficultyButtons.classList.add('hide'); //prevents starting a game while one is going on
+    highestScore = localStorage.getItem('highscore') || 0;
+
+    upperlimit = this.dataset.upperlimit;
+    lowerlimit = this.dataset.lowerlimit;
+
+    peep(lowerlimit,upperlimit);
+    setTimeout(() =>{
+      timeUp = true;
+      if(score > highestScore) localStorage.setItem('highscore', score);
+      highScoreHTML.textContent = 'Highest Score' + score;
+      difficultyButtons.classList.remove('hide');
+    }, 10000)
+  }
+
+  function bonk(e){
+    if(!e.isTrusted) return; //cheated with JS
+    score++;
+    this.classList.remove('up');
+    scoreBoard.textContent = score;
+  }
+
+
+
+  moles.forEach(mole => mole.addEventListener('click', bonk));
+  difficulty.forEach(diff => diff.addEventListener('click', startGame))
+
+</script>
+</body>
+</html>
