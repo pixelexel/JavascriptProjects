@@ -36,3 +36,17 @@
 
 18. [Speech Synthesis](https://pixelexel.github.io/JavascriptProjects/Speech%20Synthesis/index.html)
 
+19. [Sticky Nav](https://pixelexel.github.io/JavascriptProjects/Sticky%20Nav/index.html)
+
+20. [Stripe Follow Along Nav](https://pixelexel.github.io/JavascriptProjects/Stripe%20Follow%20Along%20Nav/index.html)
+
+21. [Click and Drag](https://pixelexel.github.io/JavascriptProjects/Click%20and%20Drag/index.html)
+
+22. [Video Speed Controller](https://pixelexel.github.io/JavascriptProjects/Video%20Speed%20Controller/index.html)
+
+23. [Countdown Timer](https://pixelexel.github.io/JavascriptProjects/Countdown%20Timer/index.html)
+
+24. [Whack A Mole](https://pixelexel.github.io/JavascriptProjects/Whack%20A%20Mole/index.html)
+
+
+
