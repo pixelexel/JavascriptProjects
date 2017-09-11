@@ -93,7 +93,7 @@
     setTimeout(() =>{
       timeUp = true;
       if(score > highestScore) localStorage.setItem('highscore', score);
-      highScoreHTML.textContent = 'Highest Score' + score;
+      highScoreHTML.textContent = 'Highest Score: ' + score;
       difficultyButtons.classList.remove('hide');
     }, 10000)
   }
